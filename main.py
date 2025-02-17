@@ -36,7 +36,7 @@ class WebVisite(Plugin):
         process = backend_mapping[config["backend"]]
 
     @func("visite_the_web")
-    def _(url: str, brief_len: int = None):
+    def _(url: str, brief_len: int = 4090):
         """Call this function to viste website when asking you to visite some web.but DO NOT use this function to search things
         - Summary the plain content result by yourself
 
